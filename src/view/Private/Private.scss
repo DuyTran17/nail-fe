@@ -1,0 +1,11 @@
+.dashboard-header {
+    color: white;
+    text-align: left;
+    font-size: 40px;
+    height: 5rem;
+    padding-left: 1rem;
+    background-image: linear-gradient(to right bottom,
+                        var(--secondary-color),
+                        var(--dark-green-color));
+    color: white;
+}

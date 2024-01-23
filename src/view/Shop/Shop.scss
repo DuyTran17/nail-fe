@@ -1,0 +1,88 @@
+.shop-container{
+    margin: 14rem auto;
+    display: flex;
+    .sidebar{
+        
+        max-width: 30%;
+        padding-left: 1rem;
+    }
+    .shop-content{
+        width: 70%;
+        margin: 14em auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        .shop-item{
+            
+            .shop-item-content{
+                width: 100%;
+                .shop-item-child{
+                    display: inline-block;
+                    width: 30%;
+                    margin: 5rem auto;
+                    margin-left: 1em;
+                        
+                    .shopitem-img{        
+                        justify-content: center;
+                        display: flex;         
+                        max-width: 100%;
+                        max-height: 100%;
+                        overflow: hidden;
+                        border-radius: 10px;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            transition: 300ms;
+                        }
+                        img:hover{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+            .shop-item-paginate{
+                .pagination {
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    cursor: pointer;
+                    .active{
+                        a{
+                            background: rgb(154, 154, 226);
+                            color: white;
+                        }
+                        
+                    }
+                    a {
+                        padding: 10px;
+                        border-radius: 5px;
+                        border: 1px solid #0a0a0a;
+                        color: #000000;
+                        transition: 300ms;
+                      }
+                    a:hover{
+                        background: rgb(154, 154, 226);
+                        color: white;
+                    }
+                  }
+            }
+            
+        }
+        
+    }
+}
+
+  
+  
+.pagination__link {
+    font-weight: bold;
+  }
+  
+.pagination__link--active a {
+    color: #fff;
+    background: #6c7ac9;
+  }
+  
+.pagination__link--disabled a {
+    color: rgb(198, 197, 202);
+    border: 1px solid rgb(198, 197, 202);
+  }

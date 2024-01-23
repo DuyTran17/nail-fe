@@ -1,0 +1,132 @@
+header {
+    background: url('../../img/banner_02.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: top;
+    min-height: 760px;
+
+    .navbar-container {
+        transition: 300ms ease-in-out;
+
+        .navbar-contact {
+            border-bottom: 1px solid black;
+            padding: 1rem 5rem;
+            text-align: left;
+
+            .navbar-contact-link {
+                display: inline-block;
+                width: 30%;
+
+                a {
+                    text-decoration: none;
+                    margin-left: 0.5rem;
+
+                }
+            }
+
+            .navbar-contact-name {
+                a{
+                    text-decoration: none   ;
+                    color: white;
+                }
+                color: white;
+                text-align: center;
+                width: 40%;
+                display: inline-block;
+            }
+            .navbar-login-link{
+                width: 30%;
+                display: inline-block;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    display: inline-block;
+                    margin-right: 1em;
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .navbar-menu {
+            border-bottom: 1px solid black;
+
+            .navbar-content-child {
+                padding: 1rem 5rem;
+                display: inline-block;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    margin-left: 0.5rem;
+                }
+
+                a:hover {
+                    color: black;
+                }
+            }
+
+            .navbar-content-child:hover {
+                border-bottom: 1px solid black;
+                color: black;
+            }
+        }
+    }
+
+    .navbar-container:hover {
+        .navbar-login-link{
+            a{
+                color: black;
+            }
+        }
+        .navbar-contact-name {
+            a{
+                color: black;
+            }
+            
+        }
+
+        .navbar-content-child {
+            a {
+                color: black;
+            }
+        }
+        
+
+        background: white;
+    }
+
+    .wrapper-container {
+        padding-bottom: 4rem;
+        a{
+            text-decoration: none;
+        }
+        h1 {
+            
+            padding: 3rem;
+            font-size: 5rem;
+            color: white;
+        }
+
+        .wrapper-home-button-container {
+
+            .wrapper-home-button-active,
+            .wrapper-home-button {
+                padding: 1rem 2rem;
+                font-size: 14px;
+                border: 1px solid white;
+                cursor: pointer;
+                border-radius: 3em;
+            }
+
+            .wrapper-home-button {
+                background: none;
+                color: white;
+            }
+
+            .wrapper-home-button:hover {
+                cursor: pointer;
+                color: black;
+                background: white;
+            }
+        }
+    }
+}
