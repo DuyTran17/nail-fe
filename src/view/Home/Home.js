@@ -52,7 +52,7 @@ function Home() {
                                 <img src={`${process.env.REACT_APP_API_KEY}/static/images/${data[i].productImages}`}></img>
                             </div>
                             <h3>{data[i].productname}</h3>
-                            <p>{data[i].price}Đ</p>
+                            <p>{data[i].price.toLocaleString()}VND</p>
                         </a>
                     </div>
                 )

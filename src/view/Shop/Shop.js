@@ -6,6 +6,7 @@ import { Menu, message } from 'antd';
 import './Shop.scss'
 import { useSelector, useDispatch } from "react-redux";
 import { Button } from "antd";
+import { Pagination } from 'antd';
 import { CartSelector, listProductSelector } from "../../redux/selector";
 import { IncreaseCart, addCart } from "../../redux/action";
 function getItem(label, key, children, type) {
@@ -83,7 +84,7 @@ const Shop = () => {
 
     const showCart = () => {
         console.log(process.env.REACT_APP_API_KEY)
-        
+
     }
     return (
 
@@ -96,13 +97,6 @@ const Shop = () => {
             <div >
                 <div className="shop-container">
                     <div className="sidebar">
-                        <Menu
-                            mode="inline"
-                            openKeys={openKeys}
-                            onOpenChange={onOpenChange}
-                            style={{ width: 256 }}
-                            items={items}
-                        />
                     </div>
                     <div className="shop-content">
                         <div className="shop-title">
@@ -111,28 +105,25 @@ const Shop = () => {
                         </div>
                         <div className="shop-item">
                             <div className="shop-item-content">
-                                {listProduct.map((x, index) =>
+                                {
+                                    listProduct.map((x, index) =>
                                     <div key={index} className="shop-item-child">
                                         <div className="shopitem-img">
                                             <img src={`${process.env.REACT_APP_API_KEY}/static/images/${x.productImages}`} alt={x.productName} />
                                         </div>
                                         <div className="shopitem-info">
                                             <p>{x.productname}</p>
-                                            <p>{x.price}VND</p>
+                                            <p>{x.price.toLocaleString()}VND</p>
                                             <Button type="primary" onClick={e => handleAddCart(x)} >
                                                 Add to cart
                                             </Button>
                                         </div>
                                     </div>
-                                )}
-                            </div>
-                            <div className="shop-item-paginate">
-                                <button onClick={showCart}>Cart</button>
-                            </div>
+                                )
+                                }
 
-
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>

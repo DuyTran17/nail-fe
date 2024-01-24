@@ -34,7 +34,7 @@ const About = (props) => {
                             </div>
                         </div>
                         <div className='gallery'>
-                            <iframe src="https://www.youtube.com/embed/Lg9Jq69Juoc?si=iuneP4PLyjqytySU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/ntZ0QGD7-qY" title="Nailroom BST mùa thu - NR Đào Tấn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <div className='gallery-img '>
                             <div className='gallery-img-info'>

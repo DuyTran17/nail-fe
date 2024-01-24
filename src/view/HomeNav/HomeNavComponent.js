@@ -195,7 +195,7 @@ function HomeNavComponent(props) {
                 </div>
                 <div className="navbar-menu">
                     <div className="navbar-content-child">
-                        <a href='#'>Service Menu</a>
+                    <Link to="/service" >Service Menu</Link>
                     </div>
                     <div className="navbar-content-child">
                         <a href='#' onClick={() => onChangehandlebooking()}>Book Appointment</a>

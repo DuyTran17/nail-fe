@@ -22,6 +22,7 @@ import {
   BrowserRouter as Router, Routes, Route,
 } from 'react-router-dom';
 import Booking from './view/Private/Booking/Booking';
+import Service from './view/Service/Service';
 import { UpdateOrder, UpdateProduct, UpdateUser, UpdateBooking } from './redux/action';
 import { listProductSelector } from './redux/selector';
 function App() {
@@ -102,9 +103,12 @@ function App() {
         <Route exact
           path="/CartCheckOut"
           element={
-
             <CartCheckOut />
-
+          } />
+          <Route exact
+          path="/service"
+          element={
+            <Service />
           } />
         <Route exact path="/login" element={<Login />} />
       </Routes>
