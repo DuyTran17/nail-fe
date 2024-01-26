@@ -1,0 +1,330 @@
+.home-container {
+    .service-conainer {
+        .service-title {
+            padding-top: 4rem;
+        }
+
+        .service-content {
+            .service-child {
+                max-width: 5rem;
+                cursor: pointer;
+                border: none;
+                display: inline-block;
+                text-align: center;
+                margin: 0px 2em;
+
+                img {
+                    text-align: center;
+                    width: 100%;
+                    display: block;
+                    transition: 300ms;
+                }
+
+                span {
+                    padding-top: 2em;
+                    display: block;
+                }
+            }
+
+            .service-child:hover {
+                img {
+                    transform: translate(0, -1em)
+                }
+
+            }
+        }
+
+        .service-info {
+            p {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0px auto;
+                text-align: center;
+            }
+
+        }
+
+        .service-button {
+            margin: 2rem 0rem;
+
+            button {
+                cursor: pointer;
+                background: black;
+                
+                padding: 1rem 2rem;
+                border-radius: 3em;
+                transition: 500ms;
+                border: none;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: larger;
+                }
+            }
+
+            button:hover {
+                box-shadow: 0px 40px 25px black;
+                transform: translate(0, -20px)
+            }
+        }
+    }
+
+    .about-container {
+        display: flex;
+        background: #E5EEF0;
+        align-items: center;
+
+        .about-image {
+            width: 50%;
+            display: inline-block;
+            text-align: center;
+
+            img {
+                border-radius: 50%;
+                width: 70%;
+                padding: 2em;
+            }
+        }
+
+        .about-content {
+            padding-bottom: 2em;
+            width: 50%;
+            display: inline-block;
+            align-items: center;
+
+            .about-content-child {
+                text-align: left;
+            }
+
+            .about-title {
+                text-align: left;
+            }
+
+            .about-button {
+                margin-top: 2rem;
+                text-align: left;
+
+                a {
+                    font-weight: 500;
+                    text-decoration: none;
+                    background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
+                    background-size: 200%;
+                    color: white;
+                    padding: 1rem 2rem;
+                    border-radius: 3em;
+                    border: none;
+                    transition: 300ms ease-in-out;
+                }
+
+                a:hover {
+                    color: black;
+                    background-position: left;
+                }
+            }
+        }
+
+    }
+
+    .slider-carousel-container {
+        background: white;
+
+        .slider {
+            max-width: 65%;
+            margin: 0rem auto;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+
+            .aws-sld {
+                --fall-animation-duration: 700ms;
+                --fall-animation-angle: 16deg;
+                --fall-scaling-in-from: 0.9;
+            }
+        }
+
+        .awssld__content>img {
+            object-fit: fill;
+        }
+    }
+
+    .nailbox-container {
+        display: flex;
+        background: #E5EEF0;
+        align-items: center;
+
+        .nailbox-carousel {
+            min-width: 30%;
+            margin: 1rem auto;
+
+            .slider {
+
+                .aws-sld {
+                    --fall-animation-duration: 700ms;
+                    --fall-animation-angle: 16deg;
+                    --fall-scaling-in-from: 0.9;
+                }
+            }
+
+            .awssld__content>img {
+                object-fit: fill;
+            }
+        }
+
+        .nailbox-content {
+            margin-bottom: 5rem;
+            width: 50%;
+            display: inline-block;
+            text-align: center;
+
+            .nailbox-content-child {
+                text-align: left;
+            }
+
+            .nailbox-title {
+                text-align: left;
+            }
+
+            .nailbox-button {
+                text-align: left;
+
+                a {
+                    font-weight: 500;
+                    background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
+                    background-size: 200%;
+                    color: white;
+                    padding: 1rem 2rem;
+                    border-radius: 3em;
+                    border: none;
+                    transition: 300ms ease-in-out;
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: black;
+                    background-position: left;
+                }
+
+                a:hover~img {
+                    transform: rotate(40deg);
+                }
+
+                img {
+                    height: 5rem;
+                    width: 5rem;
+                }
+            }
+        }
+
+
+    }
+
+    .homeshop-container {
+        margin: 14rem auto;
+        margin-top: 2rem;
+        margin-bottom: 0em;
+        padding-bottom: 5rem;
+        max-width: 80%;
+
+        .homeshop-content {
+            .homeshop-child {
+
+                margin: 2em;
+                max-width: 18%;
+                display: inline-block;
+
+                a {
+                    text-decoration: none;
+
+                    .img-hover {
+                        img {
+                            width: 10rem;
+                            height: 13rem;
+                            transition: 300ms;
+                        }
+
+                        overflow: hidden;
+                    }
+                }
+
+                a:hover {
+                    .img-hover {
+                        img {
+                            transform: scale(1.2);
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .homeshop-button {
+
+
+            button {
+                background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
+                background-size: 200%;
+                
+                padding: 1rem 2rem;
+                border-radius: 3em;
+                border: none;
+                transition: 300ms ease-in-out;
+                cursor: pointer;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: larger;
+                }
+            }
+
+            button:hover {
+                color: black;
+                background-position: left;
+            }
+        }
+    }
+
+
+    background: white;
+}
+
+.booking-popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(138, 138, 138, 0.58);
+    z-index: 999;
+    transition: display 300ms;
+
+    .booking-content {
+
+        background: white;
+
+        max-width: 620px;
+        margin: 4em auto;
+        padding: 30px 20px 10px 20px;
+
+        .btn-antd {
+            background: salmon;
+            padding-bottom: 1em;
+            color: white;
+        }
+
+        .btn-antd:hover {
+            color: white;
+            background: rgb(255, 180, 171);
+            border: none;
+        }
+    }
+}
+
+.is-invisible {
+    display: block;
+}

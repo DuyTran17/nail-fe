@@ -1,0 +1,18 @@
+.product-info{
+    img{
+        width: 100px;
+        height: 100px;
+    }
+}
+.addproduct-form{
+    margin: auto;
+    width: 50%;
+    margin-top: 4rem;
+    input{
+        width: 24rem;
+        text-align: center;
+    }
+    .ant-input-number-input-wrap > input.ant-input-number-input {
+        text-align: center;
+    }
+}

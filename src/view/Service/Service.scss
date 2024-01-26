@@ -1,0 +1,29 @@
+.container{
+    .content{
+        max-width: 60%;
+        margin: 0px auto;
+        margin-top:8em;
+        .content-header{
+            display: flex;
+            div{
+                min-width: 50%;
+            }
+        }
+    }
+    .content-middle{
+        padding-top: 4rem;
+        color: #b7752b;
+        width: 100%;
+        .content-middle-box{
+            width: 100%;
+            .children{
+                padding: 2rem;
+                max-width: 25%;
+                height: 14rem;
+                display: inline-grid;
+                margin: 2em;
+                border: 0.3px solid;
+            }
+        }
+    }
+}
